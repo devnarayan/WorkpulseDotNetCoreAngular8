@@ -1,0 +1,86 @@
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>
+          User Management 
+        </h3>
+      </div>
+      <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" (keyup.enter)="searchUsers()" matInput placeholder="Search users..."
+                   [formControl]="serchFormControl" [errorStateMatcher]="matcher">
+            <span class="input-group-btn">
+              <button class="btn btn-default" (click)="searchUsers()" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <!--<form>
+              <mat-form-field class="example-full-width">
+                <input (keyup.enter)="searchUsers()" matInput placeholder="Search users by username or email"
+                       [formControl]="serchFormControl" [errorStateMatcher]="matcher">
+                <mat-hint>Search users by username or email</mat-hint>
+              </mat-form-field>
+            </form>-->
+            <button mat-raised-button color="primary" [disabled]="!canReadWriteUserManagement" (click)="addUserDialog()">Add New User</button>
+            <ul class="nav navbar-right panel_toolbox">
+              <li>
+                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="close-link"><i class="fa fa-close"></i></a>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content" id="grid">
+            <dx-data-grid #grid
+                          id="gridUserContainer"
+                          [dataSource]="userDataSource"
+                          [remoteOperations]="false"
+                          [allowColumnReordering]="false"
+                          [rowAlternationEnabled]="false"
+                          [hoverStateEnabled]="true"
+                          [showBorders]="true"
+                          keyExpr="ID"
+                          [(selectedRowKeys)]="selectedRows"
+                          (onSelectionChanged)="selectionChangedHandler()"
+                          (onContentReady)="contentReady($event)">
+              <dxi-column dataField="userName"  caption="Add Role" [width]="120" [allowFiltering]="false" [allowSorting]="false" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column dataField="userName"  caption="Deactivate" [width]="120" [allowFiltering]="false" [allowSorting]="false" cellTemplate="deactivateCellTemplate"></dxi-column>
+              <dxo-paging [pageSize]="10"></dxo-paging>
+              <dxo-pager [showPageSizeSelector]="true"
+                         [allowedPageSizes]="[10, 25, 50, 100]"></dxo-pager>
+              <dxi-column dataField="userName" dataType="string"></dxi-column>
+              <dxi-column dataField="email" dataType="string"></dxi-column>
+              <div *dxTemplate="let data of 'cellTemplate'">
+                <button mat-raised-button color="primary"  [disabled]="!canReadWriteUserManagement"  (click)="editUserRoleClick(data.value)">Add Role</button>
+              </div>
+              <div *dxTemplate="let data of 'deactivateCellTemplate'">
+                <button  mat-raised-button color="primary"  [disabled]="!canReadWriteUserManagement" (click)="deactivateUserClick(data.value)">Deactivate</button>
+              </div>
+            </dx-data-grid>
+          </div>
+          <br /><br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

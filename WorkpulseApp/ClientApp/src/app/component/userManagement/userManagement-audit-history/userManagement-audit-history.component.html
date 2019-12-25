@@ -1,0 +1,69 @@
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="">
+                <div class="title_left">
+                    <h3>User Management Audit History</h3>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Search Users" name="UserName" [(ngModel)]="userName">
+                        </mat-form-field>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="picker1" placeholder="Start Date" [formControl]="startDate">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="picker2" placeholder="End Date" [formControl]="endDate">
+                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Component</mat-label>
+                            <mat-select [(ngModel)]="selectedComponent" name="CortneComponents">
+                                <mat-option *ngFor="let component of componentList" [value]="component">{{component}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button mat-raised-button color="primary" type="button" (click)="searchData()" class="button">Search</button>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div id="grid">
+                            <dx-data-grid id="gridContainer"
+                                    [dataSource]="userMgmtAuditHistDataSource"
+                                    keyExpr="cashReceiptId"
+                                    [wordWrapEnabled]="true"
+                                    showScrollbar="always"
+                                    [columnAutoWidth]="true"
+                                    [showBorders]="true"
+                                    [filterRow]="{visible: true}">
+                                <dxo-header-filter [visible]="true"></dxo-header-filter>
+                                <dxi-column dataField="rowId" caption="" [width]="80" [allowFiltering]="false" [allowSorting]="false" *ngIf="false"></dxi-column>
+                                <dxi-column dataField="userName" caption="User Name" alignment="center"></dxi-column>
+                                <dxi-column dataField="updatedBy" caption="Modified By" alignment="center"></dxi-column>
+                                <dxi-column dataField="updatedDate" dataType="date" format="shortDateShortTime" caption="Modified Date" alignment="center"></dxi-column>
+                                <dxi-column dataField="componentName" caption="Component" alignment="center"></dxi-column>
+                                <dxi-column dataField="roleId" caption="Role Name" alignment="center"></dxi-column>
+                                <dxi-column dataField="actionType" caption="Action Type" alignment="center"></dxi-column>
+                                <dxi-column dataField="locationCode" caption="Location Code" alignment="center"></dxi-column>
+                                <dxi-column dataField="countyName" caption="County Name" alignment="center"></dxi-column>
+                            </dx-data-grid>
+                        </div>
+                    </div>
+                 </div>   
+            </div>  
+        </div>
+    </div>
+</div>

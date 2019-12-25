@@ -1,0 +1,11 @@
+@media print {
+  html, body {
+    height: 99%;
+  }
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  .no-print, :last-child {
+    page-break-after: auto;
+  }
+}

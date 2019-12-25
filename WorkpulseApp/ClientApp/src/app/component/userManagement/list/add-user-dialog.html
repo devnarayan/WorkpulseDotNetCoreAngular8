@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Add new user</h1>
+<div mat-dialog-content>
+  <p>Enter user email to search in Action Directory.</p>
+  <!--<mat-form-field>
+    <input matInput [(ngModel)]="data.userName" (keyup.enter)="searchUsers()" placeholder="Search user in Action Directory">
+    <button mat-icon-button matSuffix (click)="searchUsers()" [attr.aria-label]="'Search user in Action Directory'" [attr.aria-pressed]="hide">
+      <mat-icon style="font-size:18px;">search</mat-icon>
+    </button>
+  </mat-form-field><br />-->
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Search user in Action Directory" [formControl]="emailFormControl" (keyup.enter)="searchUsers()"
+           [errorStateMatcher]="matcher">
+    <button mat-icon-button matSuffix (click)="searchUsers()" [attr.aria-label]="'Search user in Action Directory'">
+      <mat-icon style="font-size:18px;">search</mat-icon>
+    </button>
+    <mat-hint></mat-hint>
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field><br />
+
+  {{message}}
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="addUserClick()" [disabled]="addDisabled">Add User</button>
+  <button mat-button [mat-dialog-close]="data.userName" cdkFocusInitial>Close</button>
+</div>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CORTNE</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body class="nav-md" onload="checkBrowserVersion()">
+  <div class="container body">
+    <div class="main_container">
+
+      <app-root></app-root>
+
+      <footer>
+        <div class="pull-right">
+          CORTNE - powered by Dev Nagar devnagar@live.com
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+
+    </div>
+  </div>
+  <script>
+    function checkBrowserVersion() {
+      var isChromium = window.chrome;
+      var winNav = window.navigator;
+      var vendorName = winNav.vendor;
+      var isOpera = typeof window.opr !== "undefined";
+      var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+      var isIOSChrome = winNav.userAgent.match("CriOS");
+
+      if (isIOSChrome) {
+
+      }
+      else if (
+        isChromium !== null &&
+        typeof isChromium !== "undefined" &&
+        vendorName === "Google Inc." &&
+        isOpera === false &&
+        isIEedge === false
+      ) {
+        // is Google Chrome
+      }
+      else if (isIEedge) {
+        // Is MS Edge
+      }
+      else {
+        // not Google Chrome
+        console.log('not Google Chrome');
+        alert('This application is not compatible in Internet Explorer. Please open in Google Chrome, Microsoft Edge.');
+      }
+
+      return false;
+    }
+
+
+  </script>
+</body>
+</html>

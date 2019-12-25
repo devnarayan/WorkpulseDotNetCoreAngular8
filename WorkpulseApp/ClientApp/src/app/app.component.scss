@@ -1,0 +1,48 @@
+::ng-deep .dx-datagrid-headers {
+    color: #ffffff !important;
+    background-color: #2A3F54 !important;
+}
+
+::ng-deep .dx-datagrid-filter-row,  
+.dx-datagrid-filter-row .dx-editor-cell .dx-texteditor-input  
+{  
+    background-color: #ffffff;  
+}
+
+::ng-deep .dx-checkbox-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.87);
+    background-color: #fff;
+}
+
+// ::ng-deep .dx-scrollbar-hoverable  
+// {  
+//     color: #ffffff !important;
+//     background-color: #73879C;  
+// }  
+  
+// ::ng-deep .dx-scrollbar-vertical {  
+//   width: 15px  !important;  
+// }  
+  
+// ::ng-deep .dx-scrollbar-vertical .dx-scrollable-scroll {  
+//     width: 15px  !important;  
+// }  
+  
+::ng-deep .dx-scrollbar-horizontal  {  
+    height: 25px !important;  
+}  
+  
+::ng-deep .dx-scrollbar-horizontal .dx-scrollable-scroll  {  
+    height: 25px !important;  
+}
+
+::ng-deep .dx-scrollable-scroll .dx-scrollable-scroll-content {
+    background-color: #2A3F54;
+}
+
+::ng-deep .dx-datagrid-rowsview .dx-scrollable-content {  
+    padding-bottom: 15px;  
+  }
