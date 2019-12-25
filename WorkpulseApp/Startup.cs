@@ -1,12 +1,12 @@
 using AutoMapper;
-using CORTNE.Extensions;
-using CORTNE.Filters;
-using CORTNE.Helpers;
-using CORTNE.Models;
-using CORTNE.Repository;
-using CORTNE.Repository.UserAdmin;
-using CORTNE.Service.PDF;
-using CORTNE.Service.UserAdmin;
+using WorkpulseApp.Extensions;
+using WorkpulseApp.Filters;
+using WorkpulseApp.Helpers;
+using WorkpulseApp.Models;
+using WorkpulseApp.Repository;
+using WorkpulseApp.Repository.UserAdmin;
+using WorkpulseApp.Service.PDF;
+using WorkpulseApp.Service.UserAdmin;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -25,9 +25,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
-//using CORTNE.Helpers;
+//using WorkpulseApp.Helpers;
 
-namespace CORTNE
+namespace WorkpulseApp
 {
     public class Startup
     {

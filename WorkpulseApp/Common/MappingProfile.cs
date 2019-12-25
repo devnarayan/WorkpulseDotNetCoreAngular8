@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using CORTNE.Models;
-using CORTNE.ViewModel;
+using WorkpulseApp.Models;
+using WorkpulseApp.ViewModel;
 
-namespace CORTNE
+namespace WorkpulseApp
 {
     public class MappingProfile : Profile
     {

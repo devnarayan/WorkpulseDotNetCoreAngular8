@@ -1,4 +1,4 @@
-﻿using CORTNE.Exception;
+﻿using WorkpulseApp.Exception;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace CORTNE.Filters
+namespace WorkpulseApp.Filters
 {
     public class APIExceptionFilterAttribute : ExceptionFilterAttribute
     {

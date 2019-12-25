@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using CORTNE.Exception;
-using CORTNE.Helpers;
-using CORTNE.Models;
-using CORTNE.Service.ApplicationConfiguration;
-using CORTNE.ViewModel;
+using WorkpulseApp.Exception;
+using WorkpulseApp.Helpers;
+using WorkpulseApp.Models;
+using WorkpulseApp.Service.ApplicationConfiguration;
+using WorkpulseApp.ViewModel;
 using log4net;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -18,7 +18,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TestGraphApi.Models;
 
-namespace CORTNE.Controllers
+namespace WorkpulseApp.Controllers
 {
     //[Authorize]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
@@ -44,7 +44,7 @@ namespace CORTNE.Controllers
         }
 
         /// <summary>
-        /// Search the all users which are registered to CORTNE.
+        /// Search the all users which are registered to WorkpulseApp.
         /// </summary>
         /// <param name="search"></param>
         /// <returns></returns>

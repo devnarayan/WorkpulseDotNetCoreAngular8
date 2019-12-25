@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CORTNE.Models
+namespace WorkpulseApp.Models
 {
     public partial class AppException
     {

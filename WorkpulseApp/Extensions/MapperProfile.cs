@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using CORTNE.EFModelCORTNEDB;
-using CORTNE.Models;
-using CORTNE.ViewModel;
+using WorkpulseApp.EFModelCORTNEDB;
+using WorkpulseApp.Models;
+using WorkpulseApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CORTNE.Extensions
+namespace WorkpulseApp.Extensions
 {
     public class UserProfile:Profile
     {

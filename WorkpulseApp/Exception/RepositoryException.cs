@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
-namespace CORTNE.Exception
+namespace WorkpulseApp.Exception
 {
     /// <summary>
 	/// RepositoryException is thrown from inside the Repository namespace.  It includes the inner exception that is the root cause of the RepositoryException

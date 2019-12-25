@@ -1,8 +1,8 @@
-﻿using CORTNE.EFModelCORTNEDB;
-using CORTNE.Exception;
-using CORTNE.Helpers;
-using CORTNE.Models;
-using CORTNE.ViewModel;
+﻿using WorkpulseApp.EFModelCORTNEDB;
+using WorkpulseApp.Exception;
+using WorkpulseApp.Helpers;
+using WorkpulseApp.Models;
+using WorkpulseApp.ViewModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System;
@@ -10,13 +10,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CORTNE.Repository
+namespace WorkpulseApp.Repository
 {
     public interface ILocationRepository
     {
-        Task<List<CORTNE.ViewModel.LocationViewModel>> GetLocationsAsync();
+        Task<List<WorkpulseApp.ViewModel.LocationViewModel>> GetLocationsAsync();
         Task<LocationViewModel> CreateLocationAsync(LocationViewModel location);
-        Task<List<CORTNE.ViewModel.USStatesViewModel>> GetUSStatesAsync();
+        Task<List<WorkpulseApp.ViewModel.USStatesViewModel>> GetUSStatesAsync();
     }
     public class LocationRepository : ILocationRepository
     {
@@ -29,7 +29,7 @@ namespace CORTNE.Repository
             _appSettings = appSettings.Value;
         }
 
-        public async Task<List<CORTNE.ViewModel.LocationViewModel>> GetLocationsAsync()
+        public async Task<List<WorkpulseApp.ViewModel.LocationViewModel>> GetLocationsAsync()
         {
             try
             {
@@ -85,7 +85,7 @@ namespace CORTNE.Repository
             }
         }
 
-        public async Task<List<CORTNE.ViewModel.USStatesViewModel>> GetUSStatesAsync()
+        public async Task<List<WorkpulseApp.ViewModel.USStatesViewModel>> GetUSStatesAsync()
         {
             try
             {

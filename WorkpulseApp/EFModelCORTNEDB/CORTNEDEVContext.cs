@@ -1,7 +1,7 @@
-﻿using CORTNE.EFModelCORTNEDB;
+﻿using WorkpulseApp.EFModelCORTNEDB;
 using Microsoft.EntityFrameworkCore;
 
-namespace CORTNE.Models
+namespace WorkpulseApp.Models
 {
     public partial class CORTNEDEVContext : DbContext
     {

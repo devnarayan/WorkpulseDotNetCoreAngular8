@@ -8,11 +8,11 @@ using System.IO;
 using System.Threading.Tasks;
 using System;
 using System.Linq;
-using CORTNE.Helpers;
+using WorkpulseApp.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace CORTNE.Controllers
+namespace WorkpulseApp.Controllers
 {
     //[Authorize]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]

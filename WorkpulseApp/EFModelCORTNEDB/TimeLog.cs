@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CORTNE.Models
+namespace WorkpulseApp.Models
 {
     public partial class TimeLog
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CORTNE.EFModelCORTNEDB
+namespace WorkpulseApp.EFModelCORTNEDB
 {
     public partial class TemplateNotice
     {

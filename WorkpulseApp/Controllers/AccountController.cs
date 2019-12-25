@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CORTNE.Controllers
+namespace WorkpulseApp.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

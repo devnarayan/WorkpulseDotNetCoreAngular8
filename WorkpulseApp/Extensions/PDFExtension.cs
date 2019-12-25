@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CORTNE.Extensions
+namespace WorkpulseApp.Extensions
 {
     public class PDFExtension
     {

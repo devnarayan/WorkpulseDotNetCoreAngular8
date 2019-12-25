@@ -1,5 +1,5 @@
-﻿using CORTNE.Models;
-using CORTNE.ViewModel;
+﻿using WorkpulseApp.Models;
+using WorkpulseApp.ViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CORTNE.Service.UserAdmin
+namespace WorkpulseApp.Service.UserAdmin
 {
     public interface IUserAdminService
     {
@@ -24,7 +24,7 @@ namespace CORTNE.Service.UserAdmin
         Task<SecurityIdentityModel> GetCurrentSecurityUserAsync(HttpContext httpContext);
 
         /// <summary>
-        /// Search the all users which are registered to CORTNE.
+        /// Search the all users which are registered to WorkpulseApp.
         /// </summary>
         /// <param name="search"></param>
         /// <returns></returns>

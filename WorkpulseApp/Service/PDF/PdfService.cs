@@ -10,7 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CORTNE.Service.PDF
+namespace WorkpulseApp.Service.PDF
 {
     public class PdfService
     {

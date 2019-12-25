@@ -1,4 +1,4 @@
-﻿namespace CORTNE.ViewModel
+﻿namespace WorkpulseApp.ViewModel
 {
     public class RoleModel
     {

@@ -224,7 +224,7 @@ export class SecurityUser {
     }
 
     IsCORTNEDev = () => {
-        return this.hasRoleByName('CORTNE Dev');
+        return this.hasRoleByName('WorkpulseApp Dev');
     }
 
     IsEmployee = () => {

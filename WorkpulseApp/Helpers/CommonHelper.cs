@@ -1,4 +1,4 @@
-﻿using CORTNE.Models;
+﻿using WorkpulseApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TestGraphApi.Models;
 using Microsoft.AspNetCore.Hosting;
-using CORTNE.ViewModel;
+using WorkpulseApp.ViewModel;
 using System.Reflection.Metadata;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
@@ -17,7 +17,7 @@ using Microsoft.AspNetCore.Hosting.Internal;
 using iTextSharp.text.html.simpleparser;
 
 
-namespace CORTNE.Helpers
+namespace WorkpulseApp.Helpers
 {
     public class CommonHelper
     {

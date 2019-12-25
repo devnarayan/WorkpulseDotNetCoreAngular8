@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace CORTNE.Extensions
+namespace WorkpulseApp.Extensions
 {
     internal static class LoggingEventExtensions
     {

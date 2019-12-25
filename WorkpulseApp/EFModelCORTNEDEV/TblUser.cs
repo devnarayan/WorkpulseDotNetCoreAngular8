@@ -1,4 +1,4 @@
-﻿namespace CORTNE.Models
+﻿namespace WorkpulseApp.Models
 {
     public partial class TblUser
     {

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CORTNE.Repository.ApplicationConfiguration;
-using CORTNE.ViewModel;
+using WorkpulseApp.Repository.ApplicationConfiguration;
+using WorkpulseApp.ViewModel;
 
-namespace CORTNE.Service.ApplicationConfiguration
+namespace WorkpulseApp.Service.ApplicationConfiguration
 {
     public class ApplicationConfigurationService: IApplicationConfigurationService
     {

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using CORTNE.Helpers;
-using CORTNE.Models;
-using CORTNE.Service.UserAdmin;
-using CORTNE.ViewModel;
+using WorkpulseApp.Helpers;
+using WorkpulseApp.Models;
+using WorkpulseApp.Service.UserAdmin;
+using WorkpulseApp.ViewModel;
 using log4net;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -15,7 +15,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using TestGraphApi.Models;
 
-namespace CORTNE.Controllers
+namespace WorkpulseApp.Controllers
 {
 
     [Route("api/[controller]")]
@@ -77,7 +77,7 @@ namespace CORTNE.Controllers
         }
 
         /// <summary>
-        /// Search the all users which are registered to CORTNE.
+        /// Search the all users which are registered to WorkpulseApp.
         /// </summary>
         /// <param name="search"></param>
         /// <returns></returns>
@@ -107,7 +107,7 @@ namespace CORTNE.Controllers
         }
 
         /// <summary>
-        /// Get all users which are registered to CORTNE.
+        /// Get all users which are registered to WorkpulseApp.
         /// </summary>        
         /// <returns></returns>
         [Route("GetAllUsers")]
@@ -136,7 +136,7 @@ namespace CORTNE.Controllers
         }
 
         /// <summary>
-        /// Search the user in active directory and also find user registered in CORTNE or not.
+        /// Search the user in active directory and also find user registered in WorkpulseApp or not.
         /// </summary>
         /// <param name="userName"></param>
         /// <returns></returns>
@@ -157,7 +157,7 @@ namespace CORTNE.Controllers
                 }
                 else
                 {
-                    return Ok(new { success = false, message = "User already registered with CORTNE" });
+                    return Ok(new { success = false, message = "User already registered with WorkpulseApp" });
                 }
             }
             else return Ok(new { success = false, message = "User not found in Active Directory." });

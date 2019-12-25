@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using CORTNE.Service.PDF;
+using WorkpulseApp.Service.PDF;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CORTNE.Controllers
+namespace WorkpulseApp.Controllers
 {
 
     [Route("api/[controller]")]

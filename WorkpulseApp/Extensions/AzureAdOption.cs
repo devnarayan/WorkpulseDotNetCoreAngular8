@@ -1,4 +1,4 @@
-﻿namespace CORTNE.Extensions
+﻿namespace WorkpulseApp.Extensions
 {
     public class AzureAdOptions
     {

@@ -1,4 +1,4 @@
-﻿using CORTNE.Extensions;
+﻿using WorkpulseApp.Extensions;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.Extensions.Caching.Distributed;

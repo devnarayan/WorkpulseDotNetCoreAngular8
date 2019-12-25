@@ -10,10 +10,10 @@ using log4net.Core;
 using Microsoft.Azure;
 using System.Xml;
 using log4net.Appender;
-using CORTNE.Extensions;
+using WorkpulseApp.Extensions;
 using Microsoft.IdentityModel.Protocols;
 
-namespace CORTNE.Helpers.Log4net
+namespace WorkpulseApp.Helpers.Log4net
 {
     public class AzureAppendBlobAppender: BufferingAppenderSkeleton
     {

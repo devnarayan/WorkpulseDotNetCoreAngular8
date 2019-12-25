@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CORTNE.EFModelCORTNEDB
+namespace WorkpulseApp.EFModelCORTNEDB
 {
     public partial class ApplicationConfigurationLk
     {

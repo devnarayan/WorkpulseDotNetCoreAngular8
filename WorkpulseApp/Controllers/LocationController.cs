@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using CORTNE.Exception;
-using CORTNE.Helpers;
-using CORTNE.Models;
-using CORTNE.Repository;
-using CORTNE.ViewModel;
+using WorkpulseApp.Exception;
+using WorkpulseApp.Helpers;
+using WorkpulseApp.Models;
+using WorkpulseApp.Repository;
+using WorkpulseApp.ViewModel;
 using log4net;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 using TestGraphApi.Models;
 
 
-namespace CORTNE.Controllers
+namespace WorkpulseApp.Controllers
 {
     //[Authorize]
     //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]

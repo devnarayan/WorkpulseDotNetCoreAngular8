@@ -1,4 +1,4 @@
-﻿using CORTNE.Models;
+﻿using WorkpulseApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using CORTNE.ViewModel;
+using WorkpulseApp.ViewModel;
 using Microsoft.EntityFrameworkCore;
-using CORTNE.Exception;
-using CORTNE.Helpers;
+using WorkpulseApp.Exception;
+using WorkpulseApp.Helpers;
 using Microsoft.Extensions.Options;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
-namespace CORTNE.Repository.UserAdmin
+namespace WorkpulseApp.Repository.UserAdmin
 {
     public class UserAdminRepository : IUserAdminRepository
     {
@@ -129,7 +129,7 @@ namespace CORTNE.Repository.UserAdmin
         }
 
         /// <summary>
-        /// Search the all users which are registered to CORTNE.
+        /// Search the all users which are registered to WorkpulseApp.
         /// </summary>
         /// <param name="search"></param>
         /// <returns></returns>
@@ -168,7 +168,7 @@ namespace CORTNE.Repository.UserAdmin
         }
 
         /// <summary>
-        /// Search the user in active directory and also find user registered in CORTNE or not.
+        /// Search the user in active directory and also find user registered in WorkpulseApp or not.
         /// </summary>
         /// <param name="userName"></param>
         /// <returns></returns>

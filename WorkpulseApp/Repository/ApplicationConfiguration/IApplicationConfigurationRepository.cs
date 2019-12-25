@@ -1,10 +1,10 @@
-﻿using CORTNE.ViewModel;
+﻿using WorkpulseApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CORTNE.Repository.ApplicationConfiguration
+namespace WorkpulseApp.Repository.ApplicationConfiguration
 {
     public interface IApplicationConfigurationRepository
     {

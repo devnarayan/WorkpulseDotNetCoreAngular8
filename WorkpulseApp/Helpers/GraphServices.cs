@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using TestGraphApi.Models;
 
-namespace CORTNE.Helpers
+namespace WorkpulseApp.Helpers
 {
 
     public static class GraphService

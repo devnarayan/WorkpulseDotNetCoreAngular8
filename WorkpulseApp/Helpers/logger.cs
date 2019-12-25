@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace CORTNE.Helpers
+namespace WorkpulseApp.Helpers
 {
     public static class logger
     {

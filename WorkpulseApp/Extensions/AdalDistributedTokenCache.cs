@@ -2,7 +2,7 @@
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System;
 
-namespace CORTNE.Extensions
+namespace WorkpulseApp.Extensions
 {
     public class AdalDistributedTokenCache : TokenCache
     {

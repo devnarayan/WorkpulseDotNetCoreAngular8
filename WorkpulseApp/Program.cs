@@ -11,7 +11,7 @@ using System.IO;
 using System.Reflection;
 using System.Xml;
 
-namespace CORTNE
+namespace WorkpulseApp
 {
     public class Program
     {

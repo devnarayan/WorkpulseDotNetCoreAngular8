@@ -1,8 +1,8 @@
-﻿using CORTNE.EFModelCORTNEDB;
-using CORTNE.Exception;
-using CORTNE.Helpers;
-using CORTNE.Models;
-using CORTNE.ViewModel;
+﻿using WorkpulseApp.EFModelCORTNEDB;
+using WorkpulseApp.Exception;
+using WorkpulseApp.Helpers;
+using WorkpulseApp.Models;
+using WorkpulseApp.ViewModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System;
@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CORTNE.Repository.ApplicationConfiguration
+namespace WorkpulseApp.Repository.ApplicationConfiguration
 {
     public class ApplicationConfigurationRepository : IApplicationConfigurationRepository
     {

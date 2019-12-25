@@ -8,13 +8,13 @@ using System.IO;
 using System.Threading.Tasks;
 using System;
 using System.Linq;
-using CORTNE.Helpers;
+using WorkpulseApp.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using CORTNE.EFModelCORTNEDB;
-using CORTNE.ViewModel;
+using WorkpulseApp.EFModelCORTNEDB;
+using WorkpulseApp.ViewModel;
 using log4net;
-using CORTNE.Models;
+using WorkpulseApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using System.Net.Http.Headers;
@@ -22,7 +22,7 @@ using System.Net.Http;
 using System.Net;
 using System.Net.Mime;
 
-namespace CORTNE.Controllers
+namespace WorkpulseApp.Controllers
 {
     //[Authorize]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]

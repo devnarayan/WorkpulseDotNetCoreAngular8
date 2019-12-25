@@ -1,10 +1,10 @@
-﻿using CORTNE.ViewModel;
+﻿using WorkpulseApp.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
-namespace CORTNE.Models
+namespace WorkpulseApp.Models
 {
     public class IdentityModel
     {
